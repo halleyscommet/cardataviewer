@@ -4,7 +4,7 @@ with open("idle.txt", encoding="utf-8", errors="ignore") as f:
         try:
             if line[0].isdigit():
                 line = line.split(" ", 1)[1]
-            if not line.startswith("[0x232]"):
+            if not line.startswith("[0x231]"):
                 continue
             data = line.split("[")[2].strip("]").split()
             b0 = int(data[0], 16)
